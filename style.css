@@ -1,0 +1,57 @@
+/* ✅ Base styles for mobile view (default) */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+section {
+  padding: 20px;
+}
+
+section div {
+  margin-bottom: 20px;
+}
+
+section img {
+  width: 100%;
+  height: auto;
+}
+
+/* ✅ Media Query 1: Tablet View - 772px and above */
+@media (min-width: 772px) {
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  section div {
+    width: 45vw;
+    margin-bottom: 20px;
+  }
+
+  section img {
+    max-height: 30vh;
+    object-fit: cover;
+  }
+}
+
+/* ✅ Media Query 2: Desktop View - 998px and above */
+@media (min-width: 998px) {
+  section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  section div {
+    width: 30vw;
+  }
+}
